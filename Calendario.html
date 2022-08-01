@@ -46,6 +46,12 @@
                 color:black;
                 background-color:rgba(255, 0, 0,0.6);
             }
+            div[class="innore"]{
+                display:none;
+            }
+            .holidays{
+                color:red;
+            }
         </style>
     </head>
     <body onload="createCalender();">
@@ -57,7 +63,7 @@
 
                 *
 
-                * @version                               1
+                * @version                V1.0.0
 
                 *
 
@@ -78,22 +84,17 @@
             */
             const DAY_WEEK=["Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado"];
             const MONTHS=[/*0: Nombre de los mese, 1 en que dia termina.*/
-                ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"],
+                ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"], //Ya no es necesario si usas el objeto array que entrego el archivo JSON festividades porque hay contiene un array con claves que contiene esta misma lista, lo dejo por si no se carga ese archivo.
                 [  31,      28,       31,    30,     31,    30,     31,      31,       30,         31,        30,         31]
             ];
             class calender{
                 /***
                  * @param {HTMLElement} ElementFather - Elemento donde se insertará todo el año.
                  * @param {int} year - El año.
-                 * @param {Array} festive_days - Un array de clave y valor usado para colocar los dias festivos en el calendario o puede ser un archivo JSON en formato string.
                 */
-                constructor(elementFather, year, festive_days){
+                constructor(elementFather, year){
                     this.father=elementFather;
                     this.year=year;/*Cual año es, determinará tambien si es año biciesto o nó.*/
-                    this.festive_days=festive_days;
-                    if (typeof festive_days==="string"){
-                        /*Es un archivo JSON*/
-                    }
                 }
                 createCalender(){
                     /*Necesitamos crear el elemento table*/
@@ -161,6 +162,7 @@
                         tr.appendChild(td);
                         td.innerHTML=i_day;
                         td.setAttribute("class",DAY_WEEK[day_week]+" day");
+                        td.setAttribute("id",i_day+"-of-"+MONTHS[0][i]);
                     }
                     /**@param Arreglar : Diciembre trae problemas con la cantidad de fila, por lo que hay que arreglarlo.*/
                     /*Colocamos los ultimos dias de rellenos.*/
@@ -175,23 +177,37 @@
                         i_day=0;
                         month.appendChild(tr=document.createElement("tr"));
                     }
-                    console.log("is_resagado: "+is_resagado)
+                }
+                /** Esta función se encargará de colocar todas las celebraciones.
+                 * @param {Array} holidays - Array de claves y valor, que como minimo debe tener {"nombre_mes":{"dia-festivo":{"nombre-celebración","descripcion","url-imagen"}}}.
+                */
+                appendHolidays(holidays){
+                    for (let name_month in holidays){
+                        /*Mes actual*/
+                        for (let day in holidays[name_month]){
+                            /*Dia festivo actual*/
+                            let td=document.getElementById(day+"-of-"+name_month);
+                            td.innerHTML="<b class=\"holidays\">"+day+"</b><br/><b class=\"name-holidays\">"+holidays[name_month][day]["name"]+"</b><div class=\"innore\">"+holidays[name_month][day]["description"]+"</div>";
+                        }
+                    }
                 }
             }
         </script>
         <script>
-            var months={
-                "septiembre":{
-                    "init": "Jueves",
-                    "end":[
-                        30,
-                        "Viernes"
-                    ]
-                }
-            };
+            const URL_DAY_FESTIVE_JSON="./festividades.json";
             function createCalender(){
-                var calendario=new calender(document.getElementById("father-year"),2022,DAY_WEEK[6],months);
+                var calendario=new calender(document.getElementById("father-year"),2022,DAY_WEEK[6]);
                 calendario.createCalender();
+                var request=new XMLHttpRequest();
+                request.open("GET",URL_DAY_FESTIVE_JSON);
+                request.responseType="json";
+                request.send();
+                request.onload=function(){
+                    let JSON_HOLIDAYS = request.response;
+                    calendario.appendHolidays(JSON_HOLIDAYS);
+                    JSON_HOLIDAYS=undefined;
+                }
+                
             }
             
         </script>

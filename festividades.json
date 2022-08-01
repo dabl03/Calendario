@@ -1,0 +1,42 @@
+{
+    "Enero":{
+        "1":{
+            "name":"Año nuevo.",
+            "description":"Celebración por el fin del año y el comienzo de otro año. Normalmente se celebra a las 12pm del 1 de enero.",
+            "url-imagen":""
+        }
+    },
+    "Febrero":{
+
+    },
+    "Marzo":{
+
+    },
+    "Abril":{
+
+    },
+    "Mayo":{
+
+    },
+    "Junio":{
+
+    },
+    "Julio":{
+
+    },
+    "Agosto":{
+        
+    },
+    "Septiembre":{
+
+    },
+    "Octubre":{
+
+    },
+    "Noviembre":{
+
+    },
+    "Diciembre":{
+
+    }
+}
