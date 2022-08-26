@@ -6,7 +6,8 @@
         <meta charset="utf-8"/>
         <style sheet="type/css">
             body{
-                background-image:url("https://www.lifeder.com/wp-content/uploads/2019/10/paisaje-natural.jpg");/*Cambiar a una imagen sin licencia*/
+                /*Foto obtenida de https://www.canva.com/design/DAFKYjBVncc/Hl5mc2tZGhOynnMfUc6r2g/edit?utm_content=DAFKYjBVncc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton*/
+                background-image:url("./fondo_calendario_de_canvas.png");
                 background-repeat:no-repeat;
                 background-size:100vw 100vh;
                 height:100vh;
@@ -20,8 +21,11 @@
                 display: none;
             }
             #table-year{
-                margin-left: auto;
-                background-color: rgb(255, 255, 255);
+                margin-left: auto;/*Estp es para que este en la parte derecha de la pantalla.*/
+                margin-right:auto;/*Estp es para que este en la parte izquierda de la pantalla.*/
+                /*En cominacion se centrará el div.:)*/
+                margin-top:1%;
+                background-color: rgba(255, 255, 255,0.8);
                 overflow:scroll;
             }
             
@@ -41,16 +45,43 @@
             }
             td .day{
                 background-color: white;
+                /*Para hacer que disminuya tamaño para que solo se muestre el nombre del dia festivo.*/
+                max-width: 1em;
+                height: 10px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                border:0;
+            }
+            td .day:hover{
+                border:1px solid rgb(0, 0, 0);
+                background-color: aliceblue;
+                /*Para hacer que cresca en tamaño*/
+                max-width: none;
+                height:auto;
+                overflow:initial;
+                white-space: normal;
+                text-overflow:clip;
+                grid-template-columns:1fr;
             }
             .dias-de-relleno{
                 color:black;
                 background-color:rgba(255, 0, 0,0.6);
+            }
+            th,td .day{
+                border-radius:80%;
+            }
+            th:hover{
+                background-color: azure;
             }
             div[class="innore"]{
                 display:none;
             }
             .holidays{
                 color:red;
+            }
+            .now-day{
+                border:3px solid rgb(0 114 255) !important;
             }
         </style>
     </head>
@@ -196,7 +227,7 @@
         <script>
             const URL_DAY_FESTIVE_JSON="./festividades.json";
             function createCalender(){
-                var calendario=new calender(document.getElementById("father-year"),2022,DAY_WEEK[6]);
+                var calendario=new calender(document.getElementById("father-year"),2022);
                 calendario.createCalender();
                 var request=new XMLHttpRequest();
                 request.open("GET",URL_DAY_FESTIVE_JSON);
@@ -204,8 +235,12 @@
                 request.send();
                 request.onload=function(){
                     let JSON_HOLIDAYS = request.response;
+                    const date=new Date();
                     calendario.appendHolidays(JSON_HOLIDAYS);
-                    JSON_HOLIDAYS=undefined;
+                    document.getElementById(date.getDate()+"-of-"+MONTHS[0][date.getMonth()]).classList.add("now-day");
+                    if (JSON_HOLIDAYS[ MONTHS[0][date.getMonth()] ].hasOwnProperty(date.getDate())){
+                        /*Estamos en un dia feriado.*/
+                    }
                 }
                 
             }
