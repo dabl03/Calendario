@@ -1,5 +1,6 @@
 # Calendario
--------------------------------------------------------------------------------------------------------------------------------
+![logo de licencia MIT](https://user-images.githubusercontent.com/66857879/186940932-591760e2-d06c-49e5-b822-08e6ecef3462.png)
+
 Un calendario diseñado para mostrar las festividades, de cualquier país. Por ahora solo te muestra las festividades venezolanas.
 
 ## Como ejecutarlo:
