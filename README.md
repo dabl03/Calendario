@@ -1,8 +1,7 @@
 # Calendario
-![logo de licencia MIT](https://user-images.githubusercontent.com/66857879/186940932-591760e2-d06c-49e5-b822-08e6ecef3462.png)
-
 Un calendario diseñado para mostrar las festividades, de cualquier país. Por ahora solo te muestra las festividades venezolanas.
-
+-----------------
+![logo de licencia MIT](https://user-images.githubusercontent.com/66857879/186940932-591760e2-d06c-49e5-b822-08e6ecef3462.png)
 ## Como ejecutarlo:
 Para ejecutarlo necesitas iniciar un servidor porque google bloqueará cualquier intento de obtener un archivo desde la computadora. Si usas visual estudio codes puedes instalar el puglin Live Server Nombre: [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) y ejecutarlo dentro de Visual estudio codes, de no tener ese ide recomiendo descargar laragon o algo que cree un servidor dentro de tu pc.
 
