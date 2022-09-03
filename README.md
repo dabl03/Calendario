@@ -11,8 +11,8 @@ Para ejecutarlo necesitas iniciar un servidor, porque el navegador bloqueará cu
 Por ahora se le da poco uso, pero necesita el archivo festividades.json y la imagen de fondo llamada fondo_calendario_de_canvas.png.
 
 ## Proxima actualización:
-- Si hoy es un día festivo se mostrará como fondo dicho dia.
-- Se le agregará un cuadro que cuando hagas click en el dia festivo te enseñe la descripción y imágenes de dicho día.
 - Tambien se agregarán los dias festivos:)
-- Tambien se realizará un cambio completo en la presentación y se agregará un tooltlip para mostrar el nombre de dicho dia festivo.
+- Tambien se realizará un cambio completo en la presentación.
+- Tambien se mejorará la seguridad del servidor.
+
 
