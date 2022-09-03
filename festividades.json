@@ -4,14 +4,96 @@
             "name":"Año nuevo.",
             "description":"Celebración por el fin del año y el comienzo de otro año. Normalmente se celebra a las 12pm del 1 de enero.",
             "url-images":[
-
+                "https://articulosinfoguia.s3.amazonaws.com/815/51071449176128.jpg",
+                "https://lh3.ggpht.com/-7uRvIbl8PPo/UryfGnK0ilI/AAAAAAAALao/1uWP7ItDS64/s72-c/venezuela%2525206_thumb.jpg?imgmax=800",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSot-Sfe14N8qcOrYjx71vq28IDkQlScj_gYw&usqp=CAU",
+                "https://caminhoslanguages.com/wp-content/uploads/2020/12/Nochevieja-Fin-de-Ano-en-Brasil.jpg"
             ],
-            "background-image-url":"",
-            "wallpaper-image-url":""
+            "background-image-url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBdnw-psNf7fiob3aVxP6ZAm9bQzfbowC2iQ&usqp=CAU",
+            "wallpaper-image-url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTssbhwT-7kQwSUHk8z3wvegY8Psa04xumLNg&usqp=CAU"
+        },
+        "6":{
+            "name":"Reyes Magos",
+            "description":"En ese dia se conmemorar la adoración del Niño Jesús por parte de los tres reyes magos, provenientes del Oriente para rendir honores y traer presentes al recién nacido.",
+            "url-images":[
+                "https://pbs.twimg.com/media/DS374jVXkAI3nn5.jpg",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSljK3of1qLrc7YV9Q7iLQzwbhqxjWBMzpwBg&usqp=CAU",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiVpADTZPSJY39qkkribaMG0eAdJoXmMLtPg&usqp=CAU",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7wvUq6hQBqEoOo9sBlf_8WxMi5XWJLaLzsA&usqp=CAU"
+            ],
+            "background-image-url":"https://comunicacioncontinua.com/wp-content/uploads/2017/01/Reyes-magos-1.jpg",
+            "wallpaper-image-url":"https://comunicacioncontinua.com/wp-content/uploads/2017/01/Reyes-magos-1.jpg"
+        },
+        "15":{
+            "name":"Dia del Maestro",
+            "description":"Hoy 15 de enero, Venezuela celebra el Día del Maestro. Una fecha en la que se ensalza la importante labor de los profesionales, educadores y pedagogos del país y que se recuerda a grandes profesores como Andrés Bello, entre otros.<br/>El origen de este día se remonta al 15 de enero de 1932 cuando se fundó en Caracas, la Sociedad de Maestros de Instrucción Primaria con la finalidad de luchar por la dignificación y derechos de los educadores. Sin embargo, no fue hasta 1936 cuando la institución convocó la Primera Convención Nacional del Magisterio, asamblea de la que surgió la Federación Venezolana de Maestros.",
+            "url-images":[
+                "https://noticias-ve.laiglesiadejesucristo.org/media/960x540/Dia-del-Maestro-en-Venezuela.jpg",
+                "http://repositorio.unellez.edu.ve/terepaima/rrpp_imagen_noticia/17549479_f9428aede6.jpg",
+                "https://conferenciaepiscopalvenezolana.com/wp-content/uploads/2020/01/dia-educador-pastoral-enero-2020.jpeg",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVU0u54ZiFocpoWtmvllAUbBGnw_xH6SdZkg&usqp=CAU"
+            ],
+            "background-image-url":"https://i.pinimg.com/originals/8c/db/65/8cdb65adae270af37dd1651bc9332f12.jpg",
+            "wallpaper-image-url":"https://i.pinimg.com/originals/8c/db/65/8cdb65adae270af37dd1651bc9332f12.jpg"
+        },
+        "28":{
+            "name":"Dia del Cine",
+            "description":"Esta fecha suele celebrarse en recuerdo a la proyección de las primeras películas realizadas en Venezuela. Tal acontecimiento se llevó a cabo en las instalaciones del Teatro Baralt de la ciudad de Maracaibo el 28 de enero de 1897. En esa fecha se exhibieron los cortometrajes Un célebre especialista sacando muelas en el Gran Hotel Europa y Muchachos bañándose en la laguna de Maracaibo, cuya realización es atribuida al empresario y realizador Manuel Trujillo Durán. Diversas actividades y proyecciones de producciones nacionales están programadas en distintas partes del país para conmemorar, este lunes, el Día Nacional del Cine. La Cinemateca Nacional celebra el Día Nacional del Cine Con motivo de la celebración del Día Nacional del Cine, la Fundación Cinemateca Nacional presenta la proyección de la película venezolana Postales de Leningrado de Mariana Rondón. La cita es este lunes 28 de enero a las 6:30 pm en la Cinemateca GAN, en Caracas. Postulada por Venezuela a los premios Oscar y al Goya español, en Postales de Leningrado disfraces, escondites y falsos nombres sirven para que unos niños reconstruyan la vida de sus padres, guerrilleros en los años 60 en Venezuela. Como en un juego, los niños hacen de la persecución y clandestinidad una aventura de Super Héroes, mientras esperan que sus padres regresen de la montaña. Es el segundo largometraje de Mariana Rondón -aunque el primero en solitario-, después de haber realizado A la media noche y media (1999), co-dirigido con Marité Ugas.",
+            "url-images":[
+                "https://cactus24.com.ve/wp-content/uploads/2020/01/D%C3%ADa-Nacional-del-Cine.jpg",
+                "https://www.nodal.am/wp-content/uploads/2020/01/cine-venezolano-600x350-1.jpg",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH91sb8BPIUj7zFs641W1TmuCjWbC6_PaY0w&usqp=CAU",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQynenuepsrGsRxldIXNDM9A_NWb-JjCGodaw&usqp=CAU"
+            ],
+            "background-image-url":"https://www.ferrominera.com/es/wp-content/uploads/noticias-fmo-dic-2019-2.jpg",
+            "wallpaper-image-url":"https://www.ferrominera.com/es/wp-content/uploads/noticias-fmo-dic-2019-2.jpg"
         }
     },
     "Febrero":{
-
+        "1":{
+            "name":"Año Nuevo Chino.",
+            "description":"",
+            "url-images":[
+                
+            ],
+            "background-image-url":"",
+            "wallpaper-image-url":""
+        },
+        "2":{
+            "name":"Dia de la Virgen la Candelaria",
+            "description":"",
+            "url-images":[],
+            "background-image-url":"",
+            "wallpaper-image-url":""
+        },
+        "4":{
+            "name":"Dia Mundial del Cáncer.",
+            "description":"",
+            "url-images":[],
+            "background-image-url":"",
+            "wallpaper-image-url":""
+        },
+        "12":{
+            "name":"Dia de la Juventud.",
+            "description":"",
+            "url-images":[],
+            "background-image-url":"",
+            "wallpaper-image-url":""
+        },
+        "14":{
+            "name":"San Valentín.",
+            "description":"",
+            "url-images":[],
+            "background-image-url":"",
+            "wallpaper-image-url":""
+        },
+        "28":{
+            "name":"Carnaval",
+            "description":"",
+            "url-images":[],
+            "background-image-url":"",
+            "wallpaper-image-url":""
+        }
     },
     "Marzo":{
 
@@ -32,7 +114,6 @@
         
     },
     "Septiembre":{
-
     },
     "Octubre":{
 
